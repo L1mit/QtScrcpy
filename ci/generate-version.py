@@ -6,7 +6,7 @@ if __name__ == '__main__':
     commit = p.read()
     p.close()
 
-    p = os.popen('git describe --tags ' + commit)
+    p = os.popen('git describe --always --tags ' + commit)
     tag = p.read()
     p.close()
 
