@@ -15,6 +15,6 @@ if __name__ == '__main__':
     version = str(tag[1:])
     version_file = os.path.abspath(os.path.join(os.path.dirname(__file__), "../QtScrcpy/version"))
     file=open(version_file, 'w')
-    file.write('0.0.0+git.'+version)
+    file.write('0.0.0')
     file.close()
     sys.exit(0)
